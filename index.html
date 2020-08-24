@@ -19,14 +19,31 @@
         text-decoration: none;
     }
 
-    body {
-        width: 500px;
+    #indiceLista {
+        list-style: none;
     }
 
-    #indiceLista{
-        list-style: none;
-        margin-left: -40px;
+    .inline-block > div{
+        display: inline-block;
     }
+
+    .image-size{
+        width: 200px;
+        padding: 5px;
+        background-color: black;
+    }
+
+    .format-position{
+        width: 300px;
+        text-align: justify;
+        margin-left: 10px;
+        position: absolute;
+        margin-top: 10px;
+    }
+
+
+    
+
 </style>
 
 <body>
@@ -43,19 +60,25 @@
     <hr>
 
     <h1 id="apresentacao">Apresentação:</h1>
-    <h2>Cézar Augusto de Carvalho Moreira</h2>
-    <div>
-        <img src="https://scontent.fplu9-2.fna.fbcdn.net/v/t1.0-9/p960x960/67405768_2467023706654026_7950964735346737152_o.jpg?_nc_cat=106&_nc_sid=85a577&_nc_ohc=fajQmUxu3dcAX9d2xLV&_nc_ht=scontent.fplu9-2.fna&_nc_tp=6&oh=3b3f0a950bdbbd86d70b870ee117d23d&oe=5F64A5B4"
-            alt="Foto pessoal" width="200">
+
+    <div class="inline-block">
+        <div>
+            <img src="https://scontent.fplu9-2.fna.fbcdn.net/v/t1.0-9/p960x960/67405768_2467023706654026_7950964735346737152_o.jpg?_nc_cat=106&_nc_sid=85a577&_nc_ohc=fajQmUxu3dcAX9d2xLV&_nc_ht=scontent.fplu9-2.fna&_nc_tp=6&oh=3b3f0a950bdbbd86d70b870ee117d23d&oe=5F64A5B4"
+                alt="Foto pessoal" class="image-size">
+        </div>
+        <div class="format-position">
+            <h2>Cézar Augusto de Carvalho Moreira</h2>
+            <p><strong>Brasileiro</strong> nascido em Belo Horizonte/MG em 1900 e antigamente. Possuo gradução em
+                Logística e atuação na àrea por mais de 5 anos. Recém formnado, Análise de Sistemas, busco
+                recolocação profissional visando a àrea de desenvolvimento.</p>
+        </div>
     </div>
-    <div>
-        <p>Sou <strong>Brasileiro</strong> nascido em Belo Horizonte/MG em 1900 e antigamente</p>
-    </div>
+
 
     <hr>
 
     <h2 id="sobremim">Sobre mim:</h2>
-    <div>
+    <div class="clearfloat">
         <p>Sou formado em <strong>Logística e Cadeia de Suprimentos</strong>. Após atuar por mais de 5 anos na área,
             obtive bons
             conhecimentos em <strong>Excel</strong>, que por sua vez, me fez descobrir a aptidão com a área de
@@ -74,7 +97,7 @@
     <div>
         <ul>
             <li>Hardware</li>
-            <li><strong>Excel: Dashboard e Fórmulas Avançadas</strong></li>
+            <li>Excel: Dashboard e Fórmulas Avançada</li>
             <li>Funbdamentos de Programação Orientada a Objetos</li>
             <li>C# INtermediário</li>
             <li>HTML e CSS básico</li>
@@ -94,8 +117,6 @@
     </div>
 
     <hr>
-
-
 
 </body>
 
